@@ -26,6 +26,8 @@ body {
     color: #888E5F;
     padding: 11px;
     box-shadow: 0px 4px #9da853;
+    font-family: 'Concert One', cursive;
+
 }
 
 #correct {
@@ -77,6 +79,7 @@ body {
     text-align: center;
     line-height: 45px;
     box-shadow: 0px 4px #8153a8;
+    font-family: 'Concert One', cursive;
 }
 
 #choices {
@@ -99,6 +102,7 @@ body {
     line-height: 5rem;
     position: relative;
     transition: all 0.2s;
+    font-family: cursive, sans-serif;
 }
 
 .box:hover,
@@ -126,6 +130,7 @@ body {
     text-align: center;
     position: relative;
     transition: all 0.2s;
+    font-family: 'Concert One', cursive;
 }
 
 #timeRemaining {
@@ -136,6 +141,7 @@ body {
     border-radius: 3px;
     box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
     display: none;
+    font-family: 'Concert One', cursive;
 }
 
 #gameOver {
@@ -151,6 +157,7 @@ body {
     left: 375px;
     z-index: 2;
     display: none;
+    font-family: 'Concert One', cursive;
 }
 
 @media screen and (max-width: 850px) {
