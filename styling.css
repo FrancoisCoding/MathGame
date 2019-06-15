@@ -39,7 +39,7 @@ body {
     position: absolute;
     top: 100px;
     left: 220px;
-    /*    display: none;*/
+    display: none;
 }
 
 #wrong {
@@ -53,7 +53,7 @@ body {
     position: absolute;
     top: 100px;
     left: 900px;
-    /*    display: none;*/
+    display: none;
 }
 
 #question {
@@ -298,7 +298,8 @@ body {
     #timeRemaining {
         margin-top: 1rem;
     }
-        #wrong {
+
+    #wrong {
         position: absolute;
         top: 100px;
         left: 560px;
@@ -327,6 +328,7 @@ body {
     #timeRemaining {
         margin-top: 1rem;
     }
+
     #wrong {
         position: absolute;
         top: 100px;
@@ -356,6 +358,7 @@ body {
     #timeRemaining {
         margin-top: 1rem;
     }
+
     #wrong {
         position: absolute;
         top: 382px;
@@ -390,6 +393,7 @@ body {
     #timeRemaining {
         margin-top: 1rem;
     }
+
     #wrong {
         position: absolute;
         top: 382px;
@@ -403,136 +407,139 @@ body {
         font-size: 1rem;
         position: absolute;
         top: 380px;
-       
-}
 
-@media screen and (max-width: 376px) {
-    #question {
-        width: 15rem;
     }
 
-    #instruction {
-        width: 15rem;
+    @media screen and (max-width: 376px) {
+        #question {
+            width: 15rem;
+        }
+
+        #instruction {
+            width: 15rem;
+        }
+
+        #choices {
+            width: 15rem;
+        }
+
+        #startReset {
+            width: 4rem;
+        }
+
+        .box {
+            width: 3rem;
+            height: 3rem;
+        }
+
+        #gameOver {
+            height: 10rem;
+            width: 17rem;
+            top: 105px;
+            left: 50px;
+            font-size: 1.3rem
+        }
+
+        #timeRemaining {
+            margin-top: 1rem;
+        }
+
+        #wrong {
+            position: absolute;
+            top: 382px;
+            left: 260px;
+            width: 3rem;
+            font-size: .7rem;
+        }
+
+        #correct {
+            width: 3rem;
+            font-size: 1rem;
+            position: absolute;
+            top: 380px;
+            left: 50px;
+        }
     }
 
-    #choices {
-        width: 15rem;
+    @media screen and (max-width: 360px) {
+        #question {
+            width: 15rem;
+        }
+
+        #instruction {
+            width: 15rem;
+        }
+
+        #choices {
+            width: 15rem;
+        }
+
+        #startReset {
+            width: 4rem;
+        }
+
+        .box {
+            width: 3rem;
+            height: 3rem;
+        }
+
+        #gameOver {
+            height: 10rem;
+            width: 17rem;
+            top: 105px;
+            left: 44px;
+            font-size: 1.3rem
+        }
+
+        #timeRemaining {
+            margin-top: 1rem;
+        }
+
+        #wrong {
+            position: absolute;
+            top: 382px;
+            left: 240px;
+            width: 3rem;
+            font-size: .7rem;
+        }
+
+        #correct {
+            width: 3rem;
+            font-size: 1rem;
+            position: absolute;
+            top: 380px;
+            left: 50px;
+        }
     }
 
-    #startReset {
-        width: 4rem;
+    @media screen and (max-width: 320px) {
+        #gameOver {
+            height: 10rem;
+            width: 15rem;
+            top: 105px;
+            left: 40px;
+            font-size: 1.3rem
+        }
+
+        #timeRemaining {
+            margin-top: 1rem;
+        }
+
+        #wrong {
+            position: absolute;
+            top: 382px;
+            left: 216px;
+            width: 2.8rem;
+            font-size: .7rem;
+        }
+
+        #correct {
+            width: 2.5rem;
+            font-size: .7rem;
+            position: absolute;
+            top: 380px;
+            left: 40px;
+        }
     }
 
-    .box {
-        width: 3rem;
-        height: 3rem;
-    }
-
-    #gameOver {
-        height: 10rem;
-        width: 17rem;
-        top: 105px;
-        left: 50px;
-        font-size: 1.3rem
-    }
-
-    #timeRemaining {
-        margin-top: 1rem;
-    }
-    #wrong {
-        position: absolute;
-        top: 382px;
-        left: 260px;
-        width: 3rem;
-        font-size: .7rem;
-    }
-
-    #correct {
-        width: 3rem;
-        font-size: 1rem;
-        position: absolute;
-        top: 380px;
-        left: 50px;
-    }
-}
-
-@media screen and (max-width: 360px) {
-    #question {
-        width: 15rem;
-    }
-
-    #instruction {
-        width: 15rem;
-    }
-
-    #choices {
-        width: 15rem;
-    }
-
-    #startReset {
-        width: 4rem;
-    }
-
-    .box {
-        width: 3rem;
-        height: 3rem;
-    }
-
-    #gameOver {
-        height: 10rem;
-        width: 17rem;
-        top: 105px;
-        left: 44px;
-        font-size: 1.3rem
-    }
-
-    #timeRemaining {
-        margin-top: 1rem;
-    }
-    #wrong {
-        position: absolute;
-        top: 382px;
-        left: 240px;
-        width: 3rem;
-        font-size: .7rem;
-    }
-
-    #correct {
-        width: 3rem;
-        font-size: 1rem;
-        position: absolute;
-        top: 380px;
-        left: 50px;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    #gameOver {
-        height: 10rem;
-        width: 15rem;
-        top: 105px;
-        left: 40px;
-        font-size: 1.3rem
-    }
-
-    #timeRemaining {
-        margin-top: 1rem;
-    }
-    #wrong {
-        position: absolute;
-        top: 382px;
-        left: 216px;
-        width: 2.8rem;
-        font-size: .7rem;
-    }
-
-    #correct {
-        width: 2.5rem;
-        font-size: .7rem;
-        position: absolute;
-        top: 380px;
-        left: 40px;
-    }
-}
-
-/*End of Media Queries*/
+    /*End of Media Queries*/
