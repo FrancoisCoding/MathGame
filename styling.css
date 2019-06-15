@@ -42,10 +42,11 @@ body {
     top: 100px;
     left: 220px;
     display: none;
+    font-family: 'Concert One', cursive;
 }
 
 #wrong {
-    width: 8rem;
+    width: 5rem;
     font-size: 1.5rem;
     text-align: center;
     align-self: center;
@@ -56,6 +57,7 @@ body {
     top: 100px;
     left: 900px;
     display: none;
+    font-family: 'Concert One', cursive;
 }
 
 #question {
@@ -197,7 +199,7 @@ body {
         position: absolute;
         top: 100px;
         left: 628px;
-        width: 7rem;
+        width: 5rem;
         font-size: 1.4rem;
     }
 
@@ -284,7 +286,7 @@ body {
     }
 
     #score {
-        width: 3.2rem;
+        width: 4rem;
         padding: 9px;
         font-size: .9rem;
     }
@@ -368,7 +370,7 @@ body {
 
     #wrong {
         position: absolute;
-        top: 382px;
+        top: 380px;
         left: 340px;
         width: 3rem;
         font-size: .7rem;
@@ -403,9 +405,9 @@ body {
 
     #wrong {
         position: absolute;
-        top: 382px;
+        top: 380px;
         left: 280px;
-        width: 3rem;
+        width: 1rem;
         font-size: .7rem;
     }
 
@@ -453,7 +455,7 @@ body {
 
         #wrong {
             position: absolute;
-            top: 382px;
+            top: 380px;
             left: 260px;
             width: 3rem;
             font-size: .7rem;
@@ -504,7 +506,7 @@ body {
 
         #wrong {
             position: absolute;
-            top: 382px;
+            top: 380px;
             left: 240px;
             width: 3rem;
             font-size: .7rem;
@@ -534,9 +536,9 @@ body {
 
         #wrong {
             position: absolute;
-            top: 382px;
+            top: 380px;
             left: 216px;
-            width: 2.8rem;
+            width: 2.5rem;
             font-size: .7rem;
         }
 
