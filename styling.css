@@ -995,19 +995,19 @@ footer {
 
 @media screen and (max-width: 280px) {
     #wrong {
-        top: 400px;
+        top: 430px;
     }
 
     #wrong2 {
-        top: 440px;
+        top: 470px;
     }
 
     #correct {
-        top: 400px;
+        top: 430px;
     }
 
     #correct2 {
-        top: 440px;
+        top: 470px;
     }
 }
 
