@@ -140,13 +140,23 @@ function startCountdown() {
     action = setInterval(function () {
         timeRemaining -= 1;
         document.getElementById("timeRemainingValue").innerHTML = timeRemaining;
-        if (timeRemaining == 0) { // game over
+        if (timeRemaining == 0 && score2 == 0) { // game over
+            stopCountdown();
+            show("gameOver");
+            document.getElementById("gameOver").innerHTML = "<p>Congrats You Made 0 Mistakes!</p><p>Your score is " + score + ".</p>";
+            document.getElementById("gameOver").style.fontSize = "1.3rem"
+            hide("timeRemaining");
+            hide("correct");
+            hide("wrong");
+            playing = false;
+            document.getElementById("startReset").innerHTML = "Start Game";
+        } else if (timeRemaining == 0) {
             stopCountdown();
             show("gameOver");
             document.getElementById("gameOver").innerHTML = "<p>Game over!</p><p>Your score is " + score + ".</p>";
             hide("timeRemaining");
-            hide("correct2");
-            hide("wrong2");
+            hide("correct");
+            hide("wrong");
             playing = false;
             document.getElementById("startReset").innerHTML = "Start Game";
         }
