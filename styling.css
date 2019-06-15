@@ -1,0 +1,151 @@
+html {
+    background: radial-gradient(circle, #fff, #ccc);
+}
+
+body {
+    margin: auto;
+    width: 80%;
+}
+
+#container {
+    height: auto;
+    max-width: 100%;
+    padding: 1.25rem;
+    background-color: #9DD2EA;
+    border-radius: 10px;
+    box-shadow: 0px 4px 0px 0px #009de4;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+#score {
+    align-self: flex-end;
+    width: 3.5rem;
+    background-color: #F1FF92;
+    color: #888E5F;
+    padding: 11px;
+    /*    margin-bottom: .5rem;*/
+    box-shadow: 0px 4px #9da853;
+}
+
+#correct {
+    align-self: center;
+    width: 5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: #42e252;
+    color: white;
+    padding: 11px;
+    margin-bottom: 1rem;
+    display: none;
+}
+
+#wrong {
+    width: 8rem;
+    font-size: 1.5rem;
+    text-align: center;
+    align-self: center;
+    background-color: #de401a;
+    color: white;
+    padding: 11px;
+    margin-bottom: 1rem;
+    display: none;
+}
+
+#question {
+    align-self: center;
+    width: 28.13rem;
+    height: 9.375rem;
+    margin-top: 50px auto 10px auto;
+    background-color: #9DA0EA;
+    box-shadow: 0px 4px #535aa8;
+    font-size: 100px;
+    text-align: center;
+    font-family: cursive, sans-serif;
+}
+
+#instruction {
+    align-self: center;
+    margin-top: 1rem;
+    width: 28.13rem;
+    height: 3.125rem;
+    background-color: #B481D9;
+    text-align: center;
+    line-height: 45px;
+    box-shadow: 0px 4px #8153a8;
+}
+
+#choices {
+    width: 28.13rem;
+    align-self: center;
+    height: 6.25remrem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    width: 5.313rem;
+    height: 5.313rem;
+    background-color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    line-height: 5rem;
+    position: relative;
+    transition: all 0.2s;
+}
+
+.box:hover,
+#startReset:hover {
+    background-color: #9C89F6;
+    color: white;
+    box-shadow: 0px 4px #6b54d3;
+}
+
+.box:active,
+#startReset:active {
+    box-shadow: 0px 0px #6b54d3;
+    top: 0.25rem;
+}
+
+#startReset {
+    align-self: center;
+    margin-top: 1rem;
+    width: 5.313rem;
+    padding: 0.625rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    transition: all 0.2s;
+}
+
+#timeRemaining {
+    width: 200px;
+    padding: 10px;
+    align-self: flex-end;
+    background-color: rgba(181, 235, 36, 0.8);
+    border-radius: 3px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+#gameOver {
+    height: 12.5rem;
+    width: 31.25rem;
+    background: linear-gradient(#F3CA6B, #F3706C);
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 100px;
+    left: 375px;
+    z-index: 2;
+    display: none;
+}
