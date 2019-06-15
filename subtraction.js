@@ -101,10 +101,10 @@ for (i = 1; i < 5; i++) {
                 score++;
                 document.getElementById("scoreValue").innerHTML = score;
                 //hide wrong box and show correct box
-                hide("wrong");
-                show("correct");
+                hide("wrong2");
+                show("correct2");
                 setTimeout(function () {
-                    hide("correct");
+                    hide("correct2");
                 }, 1000);
 
                 // Generate New Q&A
@@ -117,10 +117,10 @@ for (i = 1; i < 5; i++) {
                     wrongSound.play();
                 }
                 // Wrong Answer
-                hide("correct");
-                show("wrong");
+                hide("correct2");
+                show("wrong2");
                 setTimeout(function () {
-                    hide("wrong");
+                    hide("wrong2");
                 }, 1000);
             }
         }
@@ -139,8 +139,8 @@ function startCountdown() {
             show("gameOver");
             document.getElementById("gameOver").innerHTML = "<p>Game over!</p><p>Your score is " + score + ".</p>";
             hide("timeRemaining");
-            hide("correct");
-            hide("wrong");
+            hide("correct2");
+            hide("wrong2");
             playing = false;
             document.getElementById("startReset").innerHTML = "Start Game";
         }
@@ -164,10 +164,10 @@ function show(Id) {
 
 // Generate Q&A's
 function generateQA() {
-    var x = 1 + Math.round(9 * Math.random());
-    var y = 1 + Math.round(9 * Math.random());
-    correctAnswer = x * y;
-    document.getElementById("question").innerHTML = x + "x" + y;
+    var x = 1 + Math.round(99 * Math.random());
+    var y = 1 + Math.round(99 * Math.random());
+    correctAnswer = x - y;
+    document.getElementById("question2").innerHTML = x + "-" + y;
     var correctPosition = 1 + Math.round(3 * Math.random());
     // Fill One Box With Correct Answer
     document.getElementById("box" + correctPosition).innerHTML = correctAnswer;
@@ -179,7 +179,7 @@ function generateQA() {
         if (i != correctPosition) {
             var wrongAnswer;
             do {
-                wrongAnswer = (1 + Math.round(9 * Math.random())) * (1 + Math.round(9 * Math.random()));
+                wrongAnswer = (1 + Math.round(99 * Math.random())) + (1 + Math.round(99 * Math.random()));
             } while (answers.indexOf(wrongAnswer) > -1)
             document.getElementById("box" + i).innerHTML = wrongAnswer;
             answers.push(wrongAnswer);

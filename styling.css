@@ -60,6 +60,36 @@ body {
     font-family: 'Concert One', cursive;
 }
 
+#correct2 {
+    order: 2;
+    width: 5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: #42e252;
+    color: white;
+    padding: 11px;
+    position: absolute;
+    top: 130px;
+    left: 220px;
+    display: none;
+    font-family: 'Concert One', cursive;
+}
+
+#wrong2 {
+    width: 5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    align-self: center;
+    background-color: #de401a;
+    color: white;
+    padding: 11px;
+    position: absolute;
+    top: 130px;
+    left: 900px;
+    display: none;
+    font-family: 'Concert One', cursive;
+}
+
 #question {
     align-self: center;
     width: 28.13rem;
@@ -68,6 +98,18 @@ body {
     background-color: white;
     box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
     font-size: 100px;
+    text-align: center;
+    font-family: cursive, sans-serif;
+}
+
+#question2 {
+    align-self: center;
+    width: 28.13rem;
+    height: 9.375rem;
+    margin-top: 50px auto 10px auto;
+    background-color: white;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    font-size: 80px;
     text-align: center;
     font-family: cursive, sans-serif;
 }
@@ -109,7 +151,7 @@ body {
 
 #start:active {
     box-shadow: 0px 0px #6b54d3;
-    top: 5.25rem;
+    top: 8.45rem;
 }
 
 .box:active,
@@ -163,7 +205,7 @@ body {
 
 #start {
     position: absolute;
-    top: 5rem;
+    top: 8.2rem;
     align-self: center;
     width: 28.13rem;
     height: 9.375rem;
@@ -177,28 +219,94 @@ body {
     cursor: pointer;
 }
 
-@media screen and (max-width: 1014px) {
-        #gameOver {
-            width: 27rem;
-            left: 290px;
-        }
+.blinking {
+    animation: blinkingText 1.1s infinite;
+}
+
+@keyframes blinkingText {
+    0% {
+        color: #0a66c2;
     }
+
+    50% {
+        color: transparent;
+    }
+
+    100% {
+        color: #0a66c2;
+    }
+}
+
+h1 {
+    font-family: 'Concert One', cursive;
+    padding-left: 10px;
+}
+
+nav {
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: black;
+    padding-left: 10px;
+    padding-right: 30px;
+    font-family: 'Concert One', cursive;
+}
+
+.nav-item a:hover {
+    color: #9DD2EA;
+}
+
+footer {
+    background: white;
+    text-align: center;
+    height: 1.5rem;
+    margin-top: -10px;
+    font-family: 'Concert One', cursive;
+}
+
+@media screen and (max-width: 1014px) {
+    #gameOver {
+        width: 27rem;
+        left: 290px;
+    }
+}
 
 @media screen and (max-width: 950px) {
-        #gameOver {
-            width: 27rem;
-            left: 260px;
-        }
+    #gameOver {
+        width: 27rem;
+        left: 260px;
     }
+}
 
 @media screen and (max-width: 900px) {
-        #gameOver {
-            width: 27rem;
-            left: 235px;
-        }
+    #gameOver {
+        width: 27rem;
+        left: 235px;
     }
+}
 
 @media screen and (min-width: 850px) {
+
+    .nav-item a:hover {
+        color: #9DD2EA;
+    }
 
     .box:hover,
     #startReset:hover {
@@ -213,10 +321,14 @@ body {
         width: 25rem;
     }
 
+    #question2 {
+        width: 25rem;
+    }
+
     #start {
         width: 25rem;
         font-size: 3rem;
-        top: 6rem;
+        top: 9rem;
     }
 
     #instruction {
@@ -255,9 +367,23 @@ body {
         font-size: 1.4rem;
     }
 
+    #wrong2 {
+        position: absolute;
+        top: 130px;
+        left: 628px;
+        width: 5rem;
+        font-size: 1.4rem;
+    }
+
     #correct {
         position: absolute;
         top: 100px;
+        left: 100px;
+    }
+
+    #correct2 {
+        position: absolute;
+        top: 130px;
         left: 100px;
     }
 }
@@ -283,9 +409,23 @@ body {
         font-size: 1.4rem;
     }
 
+    #wrong2 {
+        position: absolute;
+        top: 130px;
+        left: 610px;
+        width: 5rem;
+        font-size: 1.4rem;
+    }
+
     #correct {
         position: absolute;
         top: 100px;
+        left: 90px;
+    }
+
+    #correct2 {
+        position: absolute;
+        top: 130px;
         left: 90px;
     }
 }
@@ -311,11 +451,27 @@ body {
         font-size: 1rem;
     }
 
+    #wrong2 {
+        position: absolute;
+        top: 130px;
+        left: 595px;
+        width: 4rem;
+        font-size: 1rem;
+    }
+
     #correct {
         width: 4rem;
         font-size: 1.3rem;
         position: absolute;
         top: 100px;
+        left: 90px;
+    }
+
+    #correct2 {
+        width: 4rem;
+        font-size: 1.3rem;
+        position: absolute;
+        top: 130px;
         left: 90px;
     }
 }
@@ -325,10 +481,14 @@ body {
         width: 20rem;
     }
 
+    #question2 {
+        width: 20rem;
+    }
+
     #start {
         width: 20rem;
         font-size: 3.6rem;
-        top: 5rem;
+        top: 8rem;
     }
 
     #instruction {
@@ -374,6 +534,14 @@ body {
         font-size: 1rem;
     }
 
+    #wrong2 {
+        position: absolute;
+        top: 130px;
+        left: 560px;
+        width: 4rem;
+        font-size: 1rem;
+    }
+
     #correct {
         width: 4rem;
         font-size: 1.3rem;
@@ -381,21 +549,29 @@ body {
         top: 100px;
         left: 100px;
     }
+
+    #correct2 {
+        width: 4rem;
+        font-size: 1.3rem;
+        position: absolute;
+        top: 130px;
+        left: 100px;
+    }
 }
 
 @media screen and (max-width: 700px) {
-        #gameOver {
-            width: 19rem;
-            left: 195px;
-        }
+    #gameOver {
+        width: 19rem;
+        left: 195px;
     }
+}
 
 @media screen and (max-width: 650px) {
-        #gameOver {
-            width: 19rem;
-            left: 175px;
-        }
+    #gameOver {
+        width: 19rem;
+        left: 175px;
     }
+}
 
 @media screen and (max-width: 600px) {
     #gameOver {
@@ -418,6 +594,14 @@ body {
         font-size: .9rem;
     }
 
+    #wrong2 {
+        position: absolute;
+        top: 130px;
+        left: 465px;
+        width: 3rem;
+        font-size: .9rem;
+    }
+
     #correct {
         width: 3rem;
         font-size: 1rem;
@@ -425,21 +609,29 @@ body {
         top: 100px;
         left: 65px;
     }
+
+    #correct2 {
+        width: 3rem;
+        font-size: 1rem;
+        position: absolute;
+        top: 130px;
+        left: 65px;
+    }
 }
 
 @media screen and (max-width: 520px) {
-        #gameOver {
-            width: 18rem;
-            left: 110px;
-        }
+    #gameOver {
+        width: 18rem;
+        left: 110px;
     }
+}
 
 @media screen and (max-width: 500px) {
-        #gameOver {
-            width: 18rem;
-            left: 105px;
-        }
+    #gameOver {
+        width: 18rem;
+        left: 105px;
     }
+}
 
 @media screen and (max-width: 480px) {
     #gameOver {
@@ -462,6 +654,14 @@ body {
         font-size: .7rem;
     }
 
+    #wrong2 {
+        position: absolute;
+        top: 410px;
+        left: 340px;
+        width: 3rem;
+        font-size: .7rem;
+    }
+
     #correct {
         width: 3rem;
         font-size: 1rem;
@@ -469,30 +669,56 @@ body {
         top: 380px;
         left: 65px;
     }
+
+    #correct2 {
+        width: 3rem;
+        font-size: 1rem;
+        position: absolute;
+        top: 410px;
+        left: 65px;
+    }
 }
 
 @media screen and (max-width: 460px) {
-        #gameOver {
-            width: 19rem;
-            left: 77px;
-        }
+    #gameOver {
+        width: 19rem;
+        left: 77px;
     }
+
+    h1 {
+        font-size: 1.3rem
+    }
+
+    .nav-item a {
+        font-size: .9rem;
+    }
+}
 
 @media screen and (max-width: 430px) {
-        #gameOver {
-            width: 19rem;
-            left: 63px;
-        }
+    #gameOver {
+        width: 19rem;
+        left: 63px;
     }
+}
 
 @media screen and (max-width: 420px) {
-        #gameOver {
-            width: 19rem;
-            left: 57px;
-        }
+    #gameOver {
+        width: 19rem;
+        left: 57px;
     }
+}
 
 @media screen and (max-width: 414px) {
+
+    h1 {
+        font-size: 1.1rem
+    }
+
+    .nav-item a {
+        font-size: .9rem;
+        padding-left: 1px;
+    }
+
     .box {
         width: 3.8rem;
         height: 3.8rem;
@@ -518,6 +744,14 @@ body {
         font-size: .7rem;
     }
 
+    #wrong2 {
+        position: absolute;
+        top: 410px;
+        left: 280px;
+        width: 1rem;
+        font-size: .7rem;
+    }
+
     #correct {
         width: 3rem;
         font-size: 1rem;
@@ -526,154 +760,237 @@ body {
 
     }
 
-    @media screen and (max-width: 412px) {
-        #question {
-            width: 15rem;
-        }
+    #correct2 {
+        width: 3rem;
+        font-size: 1rem;
+        position: absolute;
+        top: 410px;
 
-        #start {
-            width: 15rem;
-            font-size: 3rem;
-        }
+    }
+}
 
-        #instruction {
-            width: 15rem;
-        }
-
-        #choices {
-            width: 15rem;
-        }
-
-        #startReset {
-            width: 4rem;
-        }
-
-        .box {
-            width: 3rem;
-            height: 3rem;
-        }
-
-        #gameOver {
-            height: 10rem;
-            width: 17rem;
-            top: 105px;
-            left: 50px;
-            font-size: 1.3rem
-        }
-
-        #timeRemaining {
-            margin-top: 1rem;
-        }
-
-        #wrong {
-            position: absolute;
-            top: 380px;
-            left: 260px;
-            width: 3rem;
-            font-size: .7rem;
-        }
-
-        #correct {
-            width: 3rem;
-            font-size: 1rem;
-            position: absolute;
-            top: 380px;
-            left: 50px;
-        }
+@media screen and (max-width: 412px) {
+    #question {
+        width: 15rem;
     }
 
-    @media screen and (max-width: 360px) {
-        #question {
-            width: 15rem;
-        }
-
-        #start {
-            width: 15rem;
-            font-size: 3rem;
-        }
-
-        #instruction {
-            width: 15rem;
-        }
-
-        #choices {
-            width: 15rem;
-        }
-
-        #startReset {
-            width: 4rem;
-        }
-
-        .box {
-            width: 3rem;
-            height: 3rem;
-        }
-
-        #gameOver {
-            height: 10rem;
-            width: 15rem;
-            top: 105px;
-            left: 60px;
-            font-size: 1.3rem
-        }
-
-        #timeRemaining {
-            margin-top: 1rem;
-        }
-
-        #wrong {
-            position: absolute;
-            top: 380px;
-            left: 240px;
-            width: 3rem;
-            font-size: .7rem;
-        }
-
-        #correct {
-            width: 3rem;
-            font-size: 1rem;
-            position: absolute;
-            top: 380px;
-            left: 50px;
-        }
+    #question2 {
+        width: 15rem;
     }
 
-        @media screen and (max-width: 330px) {
-        #gameOver {
-            width: 15rem;
-            left: 45px;
-        }
+    #start {
+        width: 15rem;
+        font-size: 3rem;
     }
 
-    
-    @media screen and (max-width: 320px) {
-        #gameOver {
-            height: 10rem;
-            width: 15rem;
-            top: 105px;
-            left: 40px;
-            font-size: 1.3rem
-        }
-
-        #timeRemaining {
-            margin-top: 1rem;
-        }
-
-        #wrong {
-            position: absolute;
-            top: 380px;
-            left: 216px;
-            width: 2.5rem;
-            font-size: .7rem;
-        }
-
-        #correct {
-            width: 2.5rem;
-            font-size: .7rem;
-            position: absolute;
-            top: 380px;
-            left: 40px;
-        }
+    #instruction {
+        width: 15rem;
     }
 
-    /*End of Media Queries*/
+    #choices {
+        width: 15rem;
+    }
+
+    #startReset {
+        width: 4rem;
+    }
+
+    .box {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    #gameOver {
+        height: 10rem;
+        width: 17rem;
+        top: 105px;
+        left: 50px;
+        font-size: 1.3rem
+    }
+
+    #timeRemaining {
+        margin-top: 1rem;
+    }
+
+    #wrong {
+        position: absolute;
+        top: 380px;
+        left: 260px;
+        width: 3rem;
+        font-size: .7rem;
+    }
+
+    #wrong2 {
+        position: absolute;
+        top: 410px;
+        left: 260px;
+        width: 3rem;
+        font-size: .7rem;
+    }
+
+    #correct {
+        width: 3rem;
+        font-size: 1rem;
+        position: absolute;
+        top: 380px;
+        left: 50px;
+    }
+
+    #correct2 {
+        width: 3rem;
+        font-size: 1rem;
+        position: absolute;
+        top: 410px;
+        left: 50px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    h1 {
+        font-size: 1rem
+    }
+
+    .nav-item a {
+        font-size: .8rem;
+        padding-left: 0px;
+    }
+
+    #question {
+        width: 15rem;
+    }
+
+    #question2 {
+        width: 15rem;
+    }
+
+    #start {
+        width: 15rem;
+        font-size: 3rem;
+    }
+
+    #instruction {
+        width: 15rem;
+    }
+
+    #choices {
+        width: 15rem;
+    }
+
+    #startReset {
+        width: 4rem;
+    }
+
+    .box {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    #gameOver {
+        height: 10rem;
+        width: 15rem;
+        top: 105px;
+        left: 60px;
+        font-size: 1.3rem
+    }
+
+    #timeRemaining {
+        margin-top: 1rem;
+    }
+
+    #wrong {
+        position: absolute;
+        top: 380px;
+        left: 240px;
+        width: 3rem;
+        font-size: .7rem;
+    }
+
+    #wrong2 {
+        position: absolute;
+        top: 410px;
+        left: 240px;
+        width: 3rem;
+        font-size: .7rem;
+    }
+
+    #correct {
+        width: 3rem;
+        font-size: 1rem;
+        position: absolute;
+        top: 380px;
+        left: 50px;
+    }
+
+    #correct2 {
+        width: 3rem;
+        font-size: 1rem;
+        position: absolute;
+        top: 410px;
+        left: 50px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    h1 {
+        font-size: .9rem
+    }
+
+    .nav-item a {
+        font-size: .7rem;
+    }
+
+    #gameOver {
+        width: 15rem;
+        left: 45px;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    #gameOver {
+        height: 10rem;
+        width: 15rem;
+        top: 105px;
+        left: 40px;
+        font-size: 1.3rem
+    }
+
+    #timeRemaining {
+        margin-top: 1rem;
+    }
+
+    #wrong {
+        position: absolute;
+        top: 380px;
+        left: 216px;
+        width: 2.5rem;
+        font-size: .7rem;
+    }
+
+    #wrong2 {
+        position: absolute;
+        top: 420px;
+        left: 216px;
+        width: 2.5rem;
+        font-size: .7rem;
+    }
+
+    #correct {
+        width: 2.5rem;
+        font-size: .7rem;
+        position: absolute;
+        top: 380px;
+        left: 40px;
+    }
+
+    #correct2 {
+        width: 2.5rem;
+        font-size: .7rem;
+        position: absolute;
+        top: 420px;
+        left: 40px;
+    }
+}
+
+/*End of Media Queries*/
