@@ -5,6 +5,11 @@ var action;
 var timeRemaining;
 var correctAnswer;
 
+// Sounds
+const correctSound = document.getElementById("correctSound");
+const wrongSound = document.getElementById("wrongSound");
+var soundFlag = true;
+
 // Start/Reset Button is Clicked
 document.getElementById("startReset").onclick = function () {
 
@@ -48,7 +53,12 @@ for (i = 1; i < 5; i++) {
         // Check to See If Game is Being Played   
         if (playing == true) {
             if (this.innerHTML == correctAnswer) {
-
+                // Correct Sound
+                if (soundFlag) {
+                    correctSound.pause();
+                    correctSound.currentTime = 0;
+                    correctSound.play();
+                }
                 // Increase Score By 1 When Correct
                 score++;
                 document.getElementById("scoreValue").innerHTML = score;
@@ -62,6 +72,12 @@ for (i = 1; i < 5; i++) {
                 // Generate New Q&A
                 generateQA();
             } else {
+                // Wrong Sound
+                if (soundFlag) {
+                    wrongSound.pause();
+                    wrongSound.currentTime = 0;
+                    wrongSound.play();
+                }
                 // Wrong Answer
                 hide("correct");
                 show("wrong");
