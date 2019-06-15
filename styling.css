@@ -107,13 +107,6 @@ body {
     font-family: 'Concert One', cursive;
 }
 
-.box:hover,
-#startReset:hover {
-    background-color: #9C89F6;
-    color: white;
-    box-shadow: 0px 4px #6b54d3;
-}
-
 #start:active {
     box-shadow: 0px 0px #6b54d3;
     top: 5.25rem;
@@ -182,6 +175,16 @@ body {
     font-family: cursive, sans-serif;
     transition: all 0.2s;
     cursor: pointer;
+}
+
+@media screen and (min-width: 850px) {
+
+    .box:hover,
+    #startReset:hover {
+        background-color: #9C89F6;
+        color: white;
+        box-shadow: 0px 4px #6b54d3;
+    }
 }
 
 @media screen and (max-width: 850px) {
