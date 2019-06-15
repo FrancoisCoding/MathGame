@@ -102,7 +102,7 @@ body {
     line-height: 5rem;
     position: relative;
     transition: all 0.2s;
-    font-family: cursive, sans-serif;
+    font-family: 'Concert One', cursive;
 }
 
 .box:hover,
