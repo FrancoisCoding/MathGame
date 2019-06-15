@@ -154,24 +154,33 @@ body {
     #question {
         width: 25rem;
     }
+
     #instruction {
         width: 25rem;
     }
+
     #choices {
         width: 25rem;
     }
+
     #startReset {
         width: 5.2rem;
     }
+
     #score {
         width: 3.4rem;
         margin-bottom: 1rem;
     }
+
     #gameOver {
         height: 12rem;
         width: 30rem;
         top: 90px;
         left: 159px;
+    }
+
+    #timeRemaining {
+        margin-top: 1rem;
     }
 }
 
@@ -183,6 +192,10 @@ body {
         left: 185px;
         font-size: 1.5rem
     }
+
+    #timeRemaining {
+        margin-top: 1rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -193,36 +206,50 @@ body {
         left: 160px;
         font-size: 1.5rem
     }
+
+    #timeRemaining {
+        margin-top: 1rem;
+    }
 }
 
 @media screen and (max-width: 750px) {
     #question {
         width: 20rem;
     }
+
     #instruction {
         width: 20rem;
     }
+
     #choices {
         width: 20rem;
     }
+
     #startReset {
         width: 5rem;
     }
+
     #score {
         width: 3.2rem;
         padding: 9px;
         font-size: .9rem;
     }
+
     .box {
         width: 4rem;
         height: 4rem;
     }
+
     #gameOver {
         height: 10rem;
         width: 24rem;
         top: 105px;
         left: 183px;
         font-size: 1.5rem
+    }
+
+    #timeRemaining {
+        margin-top: 1rem;
     }
 }
 
@@ -234,6 +261,10 @@ body {
         left: 147px;
         font-size: 1.3rem
     }
+
+    #timeRemaining {
+        margin-top: 1rem;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -244,6 +275,10 @@ body {
         left: 72.5px;
         font-size: 1.3rem
     }
+
+    #timeRemaining {
+        margin-top: 1rem;
+    }
 }
 
 @media screen and (max-width: 414px) {
@@ -251,6 +286,7 @@ body {
         width: 3.8rem;
         height: 3.8rem;
     }
+
     #gameOver {
         height: 10rem;
         width: 20rem;
@@ -258,25 +294,34 @@ body {
         left: 47px;
         font-size: 1.3rem
     }
+
+    #timeRemaining {
+        margin-top: 1rem;
+    }
 }
 
 @media screen and (max-width: 376px) {
     #question {
         width: 15rem;
     }
+
     #instruction {
         width: 15rem;
     }
+
     #choices {
         width: 15rem;
     }
+
     #startReset {
         width: 4rem;
     }
+
     .box {
         width: 3rem;
         height: 3rem;
     }
+
     #gameOver {
         height: 10rem;
         width: 17rem;
@@ -284,25 +329,34 @@ body {
         left: 50px;
         font-size: 1.3rem
     }
+
+    #timeRemaining {
+        margin-top: 1rem;
+    }
 }
 
 @media screen and (max-width: 360px) {
     #question {
         width: 15rem;
     }
+
     #instruction {
         width: 15rem;
     }
+
     #choices {
         width: 15rem;
     }
+
     #startReset {
         width: 4rem;
     }
+
     .box {
         width: 3rem;
         height: 3rem;
     }
+
     #gameOver {
         height: 10rem;
         width: 17rem;
@@ -310,7 +364,12 @@ body {
         left: 44px;
         font-size: 1.3rem
     }
+
+    #timeRemaining {
+        margin-top: 1rem;
+    }
 }
+
 @media screen and (max-width: 320px) {
     #gameOver {
         height: 10rem;
@@ -319,5 +378,10 @@ body {
         left: 40px;
         font-size: 1.3rem
     }
-} 
+
+    #timeRemaining {
+        margin-top: 1rem;
+    }
+}
+
 /*End of Media Queries*/
