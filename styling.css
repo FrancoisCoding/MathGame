@@ -177,6 +177,27 @@ body {
     cursor: pointer;
 }
 
+@media screen and (max-width: 1014px) {
+        #gameOver {
+            width: 27rem;
+            left: 290px;
+        }
+    }
+
+@media screen and (max-width: 950px) {
+        #gameOver {
+            width: 27rem;
+            left: 260px;
+        }
+    }
+
+@media screen and (max-width: 900px) {
+        #gameOver {
+            width: 27rem;
+            left: 235px;
+        }
+    }
+
 @media screen and (min-width: 850px) {
 
     .box:hover,
@@ -362,6 +383,20 @@ body {
     }
 }
 
+@media screen and (max-width: 700px) {
+        #gameOver {
+            width: 19rem;
+            left: 195px;
+        }
+    }
+
+@media screen and (max-width: 650px) {
+        #gameOver {
+            width: 19rem;
+            left: 175px;
+        }
+    }
+
 @media screen and (max-width: 600px) {
     #gameOver {
         height: 10rem;
@@ -392,6 +427,20 @@ body {
     }
 }
 
+@media screen and (max-width: 520px) {
+        #gameOver {
+            width: 18rem;
+            left: 110px;
+        }
+    }
+
+@media screen and (max-width: 500px) {
+        #gameOver {
+            width: 18rem;
+            left: 105px;
+        }
+    }
+
 @media screen and (max-width: 480px) {
     #gameOver {
         height: 10rem;
@@ -421,6 +470,27 @@ body {
         left: 65px;
     }
 }
+
+@media screen and (max-width: 460px) {
+        #gameOver {
+            width: 19rem;
+            left: 77px;
+        }
+    }
+
+@media screen and (max-width: 430px) {
+        #gameOver {
+            width: 19rem;
+            left: 63px;
+        }
+    }
+
+@media screen and (max-width: 420px) {
+        #gameOver {
+            width: 19rem;
+            left: 57px;
+        }
+    }
 
 @media screen and (max-width: 414px) {
     .box {
@@ -541,9 +611,9 @@ body {
 
         #gameOver {
             height: 10rem;
-            width: 17rem;
+            width: 15rem;
             top: 105px;
-            left: 44px;
+            left: 60px;
             font-size: 1.3rem
         }
 
@@ -568,6 +638,14 @@ body {
         }
     }
 
+        @media screen and (max-width: 330px) {
+        #gameOver {
+            width: 15rem;
+            left: 45px;
+        }
+    }
+
+    
     @media screen and (max-width: 320px) {
         #gameOver {
             height: 10rem;
