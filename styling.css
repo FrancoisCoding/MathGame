@@ -21,13 +21,22 @@ body {
 
 #score {
     align-self: flex-end;
-    width: 3.5rem;
     background-color: #F1FF92;
     color: #888E5F;
     padding: 11px;
     box-shadow: 0px 4px #9da853;
     font-family: 'Concert One', cursive;
 
+}
+
+#incorrect {
+    align-self: flex-start;
+    background-color: #F1FF92;
+    color: #888E5F;
+    padding: 11px;
+    box-shadow: 0px 4px #9da853;
+    font-family: 'Concert One', cursive;
+    position: absolute;
 }
 
 #correct {
@@ -97,7 +106,7 @@ body {
     margin-top: 50px auto 10px auto;
     background-color: white;
     box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
-    font-size: 100px;
+    font-size: 80px;
     text-align: center;
     font-family: cursive, sans-serif;
 }
@@ -205,7 +214,7 @@ body {
 
 #start {
     position: absolute;
-    top: 8.2rem;
+    top: 6.2rem;
     align-self: center;
     width: 28.13rem;
     height: 9.375rem;
@@ -328,7 +337,7 @@ footer {
     #start {
         width: 25rem;
         font-size: 3rem;
-        top: 9rem;
+        top: 8rem;
     }
 
     #instruction {
@@ -344,6 +353,11 @@ footer {
     }
 
     #score {
+        width: 3.4rem;
+        margin-bottom: 1rem;
+    }
+
+    #incorrect {
         width: 3.4rem;
         margin-bottom: 1rem;
     }
@@ -488,7 +502,7 @@ footer {
     #start {
         width: 20rem;
         font-size: 3.6rem;
-        top: 8rem;
+        top: 6.5rem;
     }
 
     #instruction {
@@ -504,6 +518,12 @@ footer {
     }
 
     #score {
+        width: 4rem;
+        padding: 9px;
+        font-size: .9rem;
+    }
+
+    #incorrect {
         width: 4rem;
         padding: 9px;
         font-size: .9rem;

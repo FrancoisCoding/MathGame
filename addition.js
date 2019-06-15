@@ -1,6 +1,7 @@
 // Variables to be Used Later
 var playing = false;
 var score;
+var score2;
 var action;
 var timeRemaining;
 var correctAnswer;
@@ -117,6 +118,11 @@ for (i = 1; i < 5; i++) {
                     wrongSound.play();
                 }
                 // Wrong Answer
+                if (score > 0) {
+                    score--;
+                }
+                score2++;
+                document.getElementById("scoreValue").innerHTML = score;
                 hide("correct2");
                 show("wrong2");
                 setTimeout(function () {
@@ -164,8 +170,8 @@ function show(Id) {
 
 // Generate Q&A's
 function generateQA() {
-    var x = 1 + Math.round(99 * Math.random());
-    var y = 1 + Math.round(99 * Math.random());
+    var x = 1 + Math.round(98 * Math.random());
+    var y = 1 + Math.round(98 * Math.random());
     correctAnswer = x + y;
     document.getElementById("question2").innerHTML = x + "+" + y;
     var correctPosition = 1 + Math.round(3 * Math.random());
@@ -179,7 +185,7 @@ function generateQA() {
         if (i != correctPosition) {
             var wrongAnswer;
             do {
-                wrongAnswer = (1 + Math.round(99 * Math.random())) + (1 + Math.round(99 * Math.random()));
+                wrongAnswer = (1 + Math.round(98 * Math.random())) + (1 + Math.round(99 * Math.random()));
             } while (answers.indexOf(wrongAnswer) > -1)
             document.getElementById("box" + i).innerHTML = wrongAnswer;
             answers.push(wrongAnswer);

@@ -1,6 +1,7 @@
 // Variables to be Used Later
 var playing = false;
 var score;
+var score2;
 var action;
 var timeRemaining;
 var correctAnswer;
@@ -25,6 +26,7 @@ document.getElementById("start").onclick = function () {
 
         // Set Initial Score
         score = 0;
+        score2 = 0;
         document.getElementById("scoreValue").innerHTML = score;
 
         // Show Time Remaining
@@ -117,6 +119,12 @@ for (i = 1; i < 5; i++) {
                     wrongSound.play();
                 }
                 // Wrong Answer
+                if(score > 0) {
+                    score--;
+                }
+                score2++;
+                document.getElementById("scoreValue").innerHTML = score;
+                document.getElementById("incorrectValue").innerHTML = score2;
                 hide("correct");
                 show("wrong");
                 setTimeout(function () {
