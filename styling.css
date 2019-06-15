@@ -114,6 +114,11 @@ body {
     box-shadow: 0px 4px #6b54d3;
 }
 
+#start:active {
+    box-shadow: 0px 0px #6b54d3;
+    top: 5.25rem;
+}
+
 .box:active,
 #startReset:active {
     box-shadow: 0px 0px #6b54d3;
@@ -133,6 +138,7 @@ body {
     position: relative;
     transition: all 0.2s;
     font-family: 'Concert One', cursive;
+    display: none;
 }
 
 #timeRemaining {
@@ -162,9 +168,30 @@ body {
     font-family: 'Concert One', cursive;
 }
 
+#start {
+    position: absolute;
+    top: 5rem;
+    align-self: center;
+    width: 28.13rem;
+    height: 9.375rem;
+    margin-top: 50px auto 10px auto;
+    background-color: white;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    font-size: 5rem;
+    text-align: center;
+    font-family: cursive, sans-serif;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 850px) {
     #question {
         width: 25rem;
+    }
+
+    #start {
+        width: 25rem;
+        font-size: 3rem;
     }
 
     #instruction {
@@ -271,6 +298,11 @@ body {
 @media screen and (max-width: 750px) {
     #question {
         width: 20rem;
+    }
+
+    #start {
+        width: 20rem;
+        font-size: 3.6rem;
     }
 
     #instruction {
@@ -419,9 +451,14 @@ body {
 
     }
 
-    @media screen and (max-width: 376px) {
+    @media screen and (max-width: 412px) {
         #question {
             width: 15rem;
+        }
+
+        #start {
+            width: 15rem;
+            font-size: 3rem;
         }
 
         #instruction {
@@ -473,6 +510,11 @@ body {
     @media screen and (max-width: 360px) {
         #question {
             width: 15rem;
+        }
+
+        #start {
+            width: 15rem;
+            font-size: 3rem;
         }
 
         #instruction {

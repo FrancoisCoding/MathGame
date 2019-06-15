@@ -11,10 +11,47 @@ const wrongSound = document.getElementById("wrongSound");
 var soundFlag = true;
 
 // Start/Reset Button is Clicked
+document.getElementById("start").onclick = function () {
+
+    if (playing == true) {
+        hide('start')
+        // Reloads Page
+        location.reload();
+
+    } else {
+
+        // Initiate Start of Game
+        playing = true;
+
+        // Set Initial Score
+        score = 0;
+        document.getElementById("scoreValue").innerHTML = score;
+
+        // Show Time Remaining
+        show("timeRemaining");
+        timeRemaining = 60;
+        document.getElementById("timeRemainingValue").innerHTML = timeRemaining;
+
+        // Hide Game Over Screen
+        show('startReset')
+        hide("gameOver");
+        hide('start')
+
+        // Change Start to Reset
+        document.getElementById("startReset").innerHTML = "Reset Game";
+
+        // Start Countdown
+        startCountdown();
+
+        // Generate New Q&A
+        generateQA();
+    }
+}
+
 document.getElementById("startReset").onclick = function () {
 
     if (playing == true) {
-
+        hide('startReset')
         // Reloads Page
         location.reload();
 
@@ -34,6 +71,7 @@ document.getElementById("startReset").onclick = function () {
 
         // Hide Game Over Screen
         hide("gameOver");
+        hide('start')
 
         // Change Start to Reset
         document.getElementById("startReset").innerHTML = "Reset Game";
