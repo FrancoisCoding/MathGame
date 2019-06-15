@@ -993,4 +993,22 @@ footer {
     }
 }
 
+@media screen and (max-width: 280px) {
+    #wrong {
+        top: 400px;
+    }
+
+    #wrong2 {
+        top: 440px;
+    }
+
+    #correct {
+        top: 400px;
+    }
+
+    #correct2 {
+        top: 440px;
+    }
+}
+
 /*End of Media Queries*/
