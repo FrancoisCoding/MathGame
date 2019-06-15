@@ -25,7 +25,7 @@ body {
     color: #888E5F;
     padding: 11px;
     box-shadow: 0px 4px #9da853;
-    font-family: 'Concert One', cursive;
+    font-family: 'Concert One', sans-serif;
 
 }
 
@@ -35,7 +35,7 @@ body {
     color: #888E5F;
     padding: 11px;
     box-shadow: 0px 4px #9da853;
-    font-family: 'Concert One', cursive;
+    font-family: 'Concert One', sans-serif;
     position: absolute;
 }
 
@@ -51,7 +51,7 @@ body {
     top: 150px;
     left: 220px;
     display: none;
-    font-family: 'Concert One', cursive;
+    font-family: 'Concert One', sans-serif;
 }
 
 #wrong {
@@ -66,7 +66,7 @@ body {
     top: 150px;
     left: 900px;
     display: none;
-    font-family: 'Concert One', cursive;
+    font-family: 'Concert One', sans-serif;
 }
 
 #correct2 {
@@ -81,7 +81,7 @@ body {
     top: 130px;
     left: 220px;
     display: none;
-    font-family: 'Concert One', cursive;
+    font-family: 'Concert One', sans-serif;
 }
 
 #wrong2 {
@@ -96,7 +96,7 @@ body {
     top: 130px;
     left: 900px;
     display: none;
-    font-family: 'Concert One', cursive;
+    font-family: 'Concert One', sans-serif;
 }
 
 #question {
@@ -132,7 +132,7 @@ body {
     text-align: center;
     line-height: 45px;
     box-shadow: 0px 4px #8153a8;
-    font-family: 'Concert One', cursive;
+    font-family: 'Concert One', sans-serif;
 }
 
 #choices {
@@ -155,7 +155,7 @@ body {
     line-height: 5rem;
     position: relative;
     transition: all 0.2s;
-    font-family: 'Concert One', cursive;
+    font-family: 'Concert One', sans-serif;
 }
 
 #start:active {
@@ -181,7 +181,7 @@ body {
     text-align: center;
     position: relative;
     transition: all 0.2s;
-    font-family: 'Concert One', cursive;
+    font-family: 'Concert One', sans-serif;
     display: none;
 }
 
@@ -193,7 +193,7 @@ body {
     border-radius: 3px;
     box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
     display: none;
-    font-family: 'Concert One', cursive;
+    font-family: 'Concert One', sans-serif;
 }
 
 #gameOver {
@@ -209,7 +209,7 @@ body {
     left: 375px;
     z-index: 2;
     display: none;
-    font-family: 'Concert One', cursive;
+    font-family: 'Concert One', sans-serif;
 }
 
 #start {
@@ -247,7 +247,7 @@ body {
 }
 
 h1 {
-    font-family: 'Concert One', cursive;
+    font-family: 'Concert One', sans-serif;
     padding-left: 10px;
 }
 
@@ -275,7 +275,7 @@ nav {
     color: black;
     padding-left: 10px;
     padding-right: 30px;
-    font-family: 'Concert One', cursive;
+    font-family: 'Concert One', sans-serif;
 }
 
 .nav-item a:hover {
@@ -287,7 +287,7 @@ footer {
     text-align: center;
     height: 1.5rem;
     margin-top: -10px;
-    font-family: 'Concert One', cursive;
+    font-family: 'Concert One', sans-serif;
 }
 
 @media screen and (max-width: 1014px) {
