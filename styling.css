@@ -236,7 +236,7 @@ footer {
     font-family: 'Concert One', sans-serif, "Arial";
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 1014px) {
 
     .nav-item a:hover {
         color: #9DD2EA;
