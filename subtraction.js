@@ -26,8 +26,9 @@ document.getElementById("start").onclick = function () {
 
         // Set Initial Score
         score = 0;
-        document.getElementById("scoreValue").innerHTML = score;
         score2 = 0;
+        document.getElementById("scoreValue").innerHTML = score;
+
 
         // Show Time Remaining
         show("timeRemaining");
@@ -55,7 +56,7 @@ document.getElementById("startReset").onclick = function () {
     if (playing == true) {
         hide('startReset')
         // Reloads Page
-        location.reload();
+        location = location;
 
     } else {
 
@@ -103,11 +104,7 @@ for (i = 1; i < 5; i++) {
                 score++;
                 document.getElementById("scoreValue").innerHTML = score;
                 //hide wrong box and show correct box
-                hide("wrong2");
-                show("correct2");
-                setTimeout(function () {
-                    hide("correct2");
-                }, 1000);
+                document.getElementById("question2").style.background = "rgb(124,252,0, 0.7)";
 
                 // Generate New Q&A
                 generateQA();
@@ -125,12 +122,8 @@ for (i = 1; i < 5; i++) {
                 score2++;
                 document.getElementById("scoreValue").innerHTML = score;
                 document.getElementById("incorrectValue").innerHTML = score2;
+                document.getElementById("question2").style.background = "rgb(255, 0, 0, 0.8)";
 
-                hide("correct2");
-                show("wrong2");
-                setTimeout(function () {
-                    hide("wrong2");
-                }, 1000);
             }
         }
     }
@@ -152,7 +145,7 @@ function startCountdown() {
             hide("correct");
             hide("wrong");
             playing = false;
-            document.getElementById("startReset").innerHTML = "Start Game";
+            document.getElementById("startReset").innerHTML = "Play Again";
         } else if (timeRemaining == 0) {
             stopCountdown();
             show("gameOver");
@@ -161,7 +154,7 @@ function startCountdown() {
             hide("correct");
             hide("wrong");
             playing = false;
-            document.getElementById("startReset").innerHTML = "Start Game";
+            document.getElementById("startReset").innerHTML = "Play Again";
         }
     }, 1000);
 }
@@ -198,7 +191,7 @@ function generateQA() {
         if (i != correctPosition) {
             var wrongAnswer;
             do {
-                wrongAnswer = (1 + Math.round(98 * Math.random())) + (1 + Math.round(99 * Math.random()));
+                wrongAnswer = (1 + Math.round(98 * Math.random())) - (1 + Math.round(99 * Math.random()));
             } while (answers.indexOf(wrongAnswer) > -1)
             document.getElementById("box" + i).innerHTML = wrongAnswer;
             answers.push(wrongAnswer);
