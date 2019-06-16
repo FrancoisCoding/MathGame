@@ -140,8 +140,6 @@ function startCountdown() {
             document.getElementById("gameOver").innerHTML = "<p>Congrats You Made 0 Mistakes!</p><p>Your score is " + score + ".</p>";
             document.getElementById("gameOver").style.fontSize = "1.3rem"
             hide("timeRemaining");
-            hide("correct");
-            hide("wrong");
             playing = false;
             document.getElementById("startReset").innerHTML = "Play Again";
         } else if (timeRemaining == 0) {
@@ -149,8 +147,6 @@ function startCountdown() {
             show("gameOver");
             document.getElementById("gameOver").innerHTML = "<p>Game Over!</p><p>Your score is " + score + ".</p>";
             hide("timeRemaining");
-            hide("correct");
-            hide("wrong");
             playing = false;
             document.getElementById("startReset").innerHTML = "Play Again";
         }
