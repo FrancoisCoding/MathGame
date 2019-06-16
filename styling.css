@@ -15,7 +15,6 @@ body {
     display: flex;
     flex-direction: column;
     align-content: space-around;
-    position: a;
 }
 
 #score {
@@ -146,7 +145,7 @@ body {
 }
 
 #gameOver {
-    height: 78%;
+    height: 84%;
     width: 100%;
     font-size: 2.5rem;
     background: linear-gradient(#F3CA6B, #F3706C);
