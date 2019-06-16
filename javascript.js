@@ -95,9 +95,8 @@ for (i = 1; i < 5; i++) {
             if (this.innerHTML == correctAnswer) {
                 // Correct Sound
                 if (soundFlag) {
-                    correctSound.pause();
-                    correctSound.currentTime = 0;
                     correctSound.play();
+                    correctSound.currentTime = 0;
                 }
                 // Increase Score By 1 When Correct
                 score++;
@@ -110,9 +109,8 @@ for (i = 1; i < 5; i++) {
             } else {
                 // Wrong Sound
                 if (soundFlag) {
-                    wrongSound.pause();
-                    wrongSound.currentTime = 0;
                     wrongSound.play();
+                    wrongSound.currentTime = 0;
                 }
                 // Wrong Answer
                 if (score > 0) {
