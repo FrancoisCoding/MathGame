@@ -26,6 +26,7 @@ document.getElementById("start").onclick = function () {
 
         // Set Initial Score
         score = 0;
+        score2 = 0;
         document.getElementById("scoreValue").innerHTML = score;
 
         // Show Time Remaining
@@ -123,6 +124,8 @@ for (i = 1; i < 5; i++) {
                 }
                 score2++;
                 document.getElementById("scoreValue").innerHTML = score;
+
+                document.getElementById("incorrectValue").innerHTML = score2;
                 hide("correct2");
                 show("wrong2");
                 setTimeout(function () {
