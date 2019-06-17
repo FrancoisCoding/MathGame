@@ -102,6 +102,9 @@ body {
     line-height: 5rem;
     position: relative;
     transition: all 0.2s;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Concert One', sans-serif, "Arial";
 }
 
