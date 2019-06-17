@@ -293,6 +293,13 @@ footer {
     #choices {
         height: 2.8rem
     }
+    .nav-item a {
+    text-decoration: none;
+    color: black;
+    padding-left: 5px;
+    padding-right: 7px;
+    font-family: 'Concert One', "Arial";
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -302,6 +309,13 @@ footer {
 
     #choices {
         height: 2.8rem
+    }
+    .nav-item a {
+    text-decoration: none;
+    color: black;
+    padding-left: 3px;
+    padding-right: 5px;
+    font-family: 'Concert One', "Arial";
     }
 }
 
