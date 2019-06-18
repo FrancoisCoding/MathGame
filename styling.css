@@ -113,13 +113,6 @@ body {
     top: 6.25rem;
 }
 
-.box:hover,
-#startReset:hover {
-    background-color: #9C89F6;
-    color: white;
-    box-shadow: 0px 4px #6b54d3;
-}
-
 #startReset {
     align-self: center;
     margin-top: 1rem;
@@ -227,10 +220,6 @@ nav {
     font-family: 'Concert One', "Arial";
 }
 
-.nav-item a:hover {
-    color: #9DD2EA;
-}
-
 footer {
     background: white;
     text-align: center;
@@ -239,7 +228,7 @@ footer {
     font-family: 'Concert One', "Arial";
 }
 
-@media screen and (min-width: 1014px) {
+@media screen and (min-width: 850px) {
 
     .nav-item a:hover {
         color: #9DD2EA;
